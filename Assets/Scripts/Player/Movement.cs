@@ -16,7 +16,7 @@ public class Movement
         {
             Quaternion rot = Quaternion.LookRotation(_dir,Vector3.up);
         }
-        Vector3 _newPos = _rb.position + _dir * _speed * Time.fixedDeltaTime;
+        Vector3 _newPos = (_rb.position + _dir * _speed * Time.fixedDeltaTime);
         _rb.MovePosition(_newPos);
     }
 }
