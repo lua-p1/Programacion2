@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class Player : MonoBehaviour
 {
     [SerializeField]private float _initSpeed;
     [SerializeField]private Rigidbody _rb;
     [SerializeField]private Movement _movement;
     [SerializeField]private Controller _controller;
-    [SerializeField]private Vector2 _movInputs;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
